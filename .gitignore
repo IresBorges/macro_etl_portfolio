@@ -1,0 +1,33 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Outputs
+output/
+*.xlsx
+
+# Data Files
+data/*.csv
+
+# Build
+build/
+dist/
+*.egg-info/
