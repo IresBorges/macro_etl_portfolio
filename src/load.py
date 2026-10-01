@@ -217,4 +217,13 @@ if __name__ == "__main__":
             logging.FileHandler(
                 os.path.join(
                     LOGS_DIR,
+                    "pipeline.log"
+                ),
+                encoding="utf-8"
+            ),
+            logging.StreamHandler()
+        ]
+    )
+
+    generate_excel_dashboard()
           
