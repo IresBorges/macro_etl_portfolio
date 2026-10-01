@@ -1,0 +1,14 @@
+services:
+  macro-etl:
+    image: macro-etl:latest
+    container_name: macro-etl
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./logs:/app/logs
+
+    command: python -m src.main
